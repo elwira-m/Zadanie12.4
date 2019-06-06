@@ -1,6 +1,47 @@
+/*******************Random Chuck Norris Fact*************/
+
 body {
-	background-color: #de8875;
+	background-image: url(cam-adams2.jpg);
+	color: #d2d2d2;
 }
-h1 {
-	margin-left: 20px;
+
+header {
+	margin: 0 auto;
+	text-align: center;
+	margin-left: 50vw;
+	font-size: 25px;
+	font-family: 'Gaegu', cursive;
 }
+
+span {
+	font-family: 'Old Standard TT', serif;
+	font-size: 45px;
+	letter-spacing: 5px;
+}
+
+button {
+	cursor: pointer;
+	margin-top: 40px;
+	width: 100px;
+	height: 30px;
+	text-transform: uppercase;
+}
+
+button:hover {
+	font-size: 60%;
+	color: #fff;
+	background-color: gray;
+}
+
+main {
+	margin-top:18vh;
+	text-align: center;
+	font-family: 'Gaegu', cursive;
+	font-size: 45px;
+}
+
+main p {
+	max-width: 90%;
+	margin: 0 auto;
+}
+	
