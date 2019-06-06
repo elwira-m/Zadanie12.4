@@ -1,18 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang='en'>
   <head>
     <meta charset="UTF-8">
-    <title>Zadanie 12.4 (zapytanie do serwera)</title>
+    <title>Random Chuck Norris Fact</title>
+    <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gaegu:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   </head>
+
   <body>
-    <h1>Zadanie 12.4: pobranie losowego żartu o Chucku Norrisie</h1>
-    <div>
-  		<button id="get-joke">Random joke</button>
-		<p id="joke"></p>
-  	</div>
-	 
+    
+    <header>
+      <h1>random<br><span>Chuck Norris</span><br>fact</h1>
+      <button id="get-joke">next fact</button>
+    </header>
+    
+    <main>
+      <p id="joke"></p>      
+    </main>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="script.js"></script>
+    
   </body>
 </html>
+
