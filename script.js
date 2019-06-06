@@ -1,22 +1,24 @@
-//script.js
+////////////////Random Chuck Norris Fact//////////
 
+$(function(){  
 
-var url = 'https://api.icndb.com/jokes/random';
-
-var button = document.getElementById('get-joke');
-button.addEventListener('click', function(){
-  getJoke();
-});
-
-var paragraph = document.getElementById('joke');
-
-function getJoke() {
-  var xhr = new XMLHttpRequest();
-  xhr.open('GET', url);
-  xhr.addEventListener('load', function(){
-    var response = JSON.parse(xhr.response);
-    paragraph.innerHTML = response.value.joke;
+  var url = 'https://api.icndb.com/jokes/random';
+  
+  $('#get-joke').click (function() {
+   getJoke();
   });
-  xhr.send();
-};
-//getJoke()
+
+  function getJoke() {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', url);
+
+    $(xhr).on('load', function(){
+      var response = JSON.parse(xhr.response);
+      $('#joke').text(response.value.joke);
+    });
+    xhr.send();
+  };
+
+  getJoke();
+
+});
