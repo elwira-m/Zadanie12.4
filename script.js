@@ -2,7 +2,7 @@
 
 $(function(){  
 
-  var url = 'https://api.icndb.com/jokes/random';
+  var url = 'https://api.icndb.com/jokes/random?escape=javascript';
   
   $('#get-joke').click (function() {
    getJoke();
